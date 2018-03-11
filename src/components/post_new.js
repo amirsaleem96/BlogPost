@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { Field, reduxForm } from 'redux-form';
+import { Link } from 'react-router-dom';
 
 class PostNew extends Component {
 
@@ -34,6 +35,7 @@ class PostNew extends Component {
                 <Field label = 'Catgeories' name = 'categories' component = { this.renderField } />
                 <Field label = 'Content' name = 'content' component = { this.renderField } />
                 <button type = 'submit' className = 'btn btn-primary'>Save</button>
+                <Link to = '/' className = 'btn btn-danger'>Cancel</Link>
             </form>
         )
     }
