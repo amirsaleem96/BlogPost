@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import Author from '../reducers/test_reducer';
+import Posts from '../reducers/reducer_posts';;
 const rootReducer = combineReducers({
-  author: Author
+  posts: Posts
 });
 
 export default rootReducer;
